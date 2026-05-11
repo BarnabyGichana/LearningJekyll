@@ -41,3 +41,39 @@ sudo apt-get install ruby-full build-essential zlib1g-dev -y
 ```bash
 gem install jekyll bundler
 ```
+
+# Creating a New Site
+
+To create a new site using Jekyll, run the following command where `<site-name>` is the name of your site:
+
+```bash
+jekyll new <site-name>
+```
+
+In this repository, I created a site named `test_site` with the following command
+
+```bash
+jekyll new test_site
+```
+
+## Serving a Site
+
+To serve a Jekyll site locally, first navigate into the site's root directory (we shall proceed with the `test_site` example):
+
+```bash
+cd ./test_site
+```
+
+Then we run one of the two following commands depending on whether or not the site is being served for the first time:
+
+```bash
+# Serving a site for the first time
+bundle exec jekyll serve
+```
+
+or
+
+```bash
+# Serving a previously bundled site
+jekyll serve
+```
